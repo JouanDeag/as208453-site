@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>AS208453 | Johan Karlsson (SweHosting)</title>
+	<meta
+		name="description"
+		content="Welcome to AS208453, a network operated by Johan Karlsson (SweHosting). Intressted in peering with us? Reach out to us!"
+	/>
 </svelte:head>
 
 <main>
