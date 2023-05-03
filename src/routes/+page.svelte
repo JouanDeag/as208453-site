@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>AS208453 | Johan Karlsson (SweHosting)</title>
+</svelte:head>
+
 <main>
 	<h1>AS208453 Peering policy</h1>
 
@@ -14,22 +18,22 @@
 	<section class="link-wrapper">
 		<a href="https://swehosting.se" target="_blank">
 			Website
-			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 		</a>
 
 		<a href="https://as208453.peeringdb.com" target="_blank">
 			PeeringDB
-			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 		</a>
 
 		<a href="https://bgp.tools/as/208453" target="_blank">
 			bgp.tools
-			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 		</a>
 
 		<a href="https://bgp.he.net/AS208453" target="_blank">
 			bgp.he.net
-			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 		</a>
 	</section>
 
@@ -111,33 +115,21 @@
 					Technical Email:
 					<a href="mailto:noc@as208453.net">
 						noc@as208453.net
-						<img
-							src="/External_link_font_awesome.svg"
-							alt="External link icon"
-							aria-hidden="true"
-						/>
+						<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 					</a>
 				</li>
 				<li>
 					Peering Email:
 					<a href="mailto:peering@as208453.net">
 						peering@as208453.net
-						<img
-							src="/External_link_font_awesome.svg"
-							alt="External link icon"
-							aria-hidden="true"
-						/>
+						<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 					</a>
 				</li>
 				<li>
 					Abuse Email:
 					<a href="mailto:abuse@as208453.net">
 						abuse@as208453.net
-						<img
-							src="/External_link_font_awesome.svg"
-							alt="External link icon"
-							aria-hidden="true"
-						/>
+						<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
 					</a>
 				</li>
 			</ul>
