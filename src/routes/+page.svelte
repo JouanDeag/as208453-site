@@ -5,9 +5,32 @@
 		<h2>General information</h2>
 		<p>
 			Johan Karlsson, SweHosting, (AS208453) practices an open peering policy, and will peer with
-			everyone who wants to peer with us. While we do not require any written agreement, you must
-			comply with the policies outlined below.
+			everyone who wants to peer with us.
+			<br />
+			While we do not require any written agreement, you must comply with the policies outlined below.
 		</p>
+	</section>
+
+	<section class="link-wrapper">
+		<a href="https://swehosting.se" target="_blank">
+			Website
+			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+		</a>
+
+		<a href="https://as208453.peeringdb.com" target="_blank">
+			PeeringDB
+			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+		</a>
+
+		<a href="https://bgp.tools/as/208453" target="_blank">
+			bgp.tools
+			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+		</a>
+
+		<a href="https://bgp.he.net/AS208453" target="_blank">
+			bgp.he.net
+			<img src="/External_link_font_awesome.svg" alt="External link icon" aria-hidden="true" />
+		</a>
 	</section>
 
 	<div class="group">
@@ -86,40 +109,151 @@
 			<ul>
 				<li>
 					Technical Email:
-					<a href="mailto:noc@as208453.net">noc@as208453.net</a>
+					<a href="mailto:noc@as208453.net">
+						noc@as208453.net
+						<img
+							src="/External_link_font_awesome.svg"
+							alt="External link icon"
+							aria-hidden="true"
+						/>
+					</a>
 				</li>
 				<li>
 					Peering Email:
-					<a href="mailto:peering@as208453.net">peering@as208453.net</a>
+					<a href="mailto:peering@as208453.net">
+						peering@as208453.net
+						<img
+							src="/External_link_font_awesome.svg"
+							alt="External link icon"
+							aria-hidden="true"
+						/>
+					</a>
 				</li>
 				<li>
 					Abuse Email:
-					<a href="mailto:abuse@as208453.net">abuse@as208453.net</a>
+					<a href="mailto:abuse@as208453.net">
+						abuse@as208453.net
+						<img
+							src="/External_link_font_awesome.svg"
+							alt="External link icon"
+							aria-hidden="true"
+						/>
+					</a>
 				</li>
 			</ul>
 		</section>
 	</div>
+	<footer>
+		<p>Copyright &copy; {new Date().getFullYear()} Johan Karlsson</p>
+	</footer>
 </main>
 
 <style>
 	main {
-		max-width: 1536px;
+		max-width: 1280px;
 		margin: 0 auto;
 		padding: 1rem;
 	}
 
-	.group {
-		display: flex;
-		flex-wrap: wrap;
+	h1 {
+		font-size: 2.25rem;
+		margin: 0 0 1rem 0;
 	}
 
-	.group > section {
-		width: 50%;
+	footer {
+		color: #aaa;
 	}
 
+	/* General section styling */
 	section {
 		background-color: #262a2b;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+		padding: 0.25rem 1rem;
+		margin-top: 0.5rem;
+		border-radius: 0.25rem;
+	}
+
+	ul {
+		list-style: decimal;
 		padding: 1rem;
+	}
+
+	li {
+		padding: 0.5rem;
+	}
+
+	a {
+		color: skyblue;
+		text-decoration: none;
+	}
+
+	a img {
+		width: 0.75rem;
+		height: 0.75rem;
+		padding-top: auto;
+	}
+
+	/* Styling for links to external sites  */
+	.link-wrapper {
+		gap: 0.5rem;
+
+		padding: 0;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.link-wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		list-style: none;
+		gap: 0.5rem;
+		padding: 0;
+	}
+
+	.link-wrapper a {
+		color: blanchedalmond;
+		background-color: #262a2b;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+		border-radius: 0.25rem;
+		text-align: center;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		font-size: 1.25rem;
+		width: 100%;
+		padding: 0.75rem;
+	}
+
+	.link-wrapper a:hover {
+		background-color: #1d2021;
+		color: skyblue;
+	}
+
+	/* Styling for groups of 2 sections side by side */
+	.group {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.group > section {
+		width: calc(50% - 0.25rem);
+	}
+
+	/* Media queries */
+	@media (max-width: 1000px) {
+		.group > section {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.link-wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 500px) {
+		.link-wrapper {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 </style>
