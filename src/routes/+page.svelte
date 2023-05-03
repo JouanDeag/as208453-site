@@ -234,14 +234,14 @@
 		width: calc(50% - 0.25rem);
 	}
 
-	.group > section:last-child {
-		margin-top: 0;
-	}
-
 	/* Media queries */
 	@media (max-width: 1000px) {
 		.group > section {
 			width: 100%;
+		}
+
+		.group > section:last-child {
+			margin-top: 0;
 		}
 	}
 
