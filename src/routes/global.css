@@ -16,6 +16,10 @@ body {
 	padding: 0;
 }
 
+main > * {
+	margin-bottom: 0.5em;
+}
+
 /* Highlighter */
 
 ::-moz-selection {

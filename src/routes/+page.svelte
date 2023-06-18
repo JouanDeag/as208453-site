@@ -1,3 +1,7 @@
+<script>
+	import NavLinks from '../lib/components/NavLinks.svelte';
+</script>
+
 <svelte:head>
 	<title>AS208453 | Johan Karlsson (SweHosting)</title>
 	<meta
@@ -19,29 +23,9 @@
 		</p>
 	</section>
 
-	<section class="link-wrapper">
-		<a href="https://swehosting.se" target="_blank">
-			Website
-			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
-		</a>
+	<NavLinks />
 
-		<a href="https://as208453.peeringdb.com" target="_blank">
-			PeeringDB
-			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
-		</a>
-
-		<a href="https://bgp.tools/as/208453" target="_blank">
-			bgp.tools
-			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
-		</a>
-
-		<a href="https://bgp.he.net/AS208453" target="_blank">
-			bgp.he.net
-			<img src="/linkicon.svg" alt="External link icon" aria-hidden="true" />
-		</a>
-	</section>
-
-	<div class="group">
+	<div class="grid">
 		<section>
 			<h2>Requirements</h2>
 
@@ -80,8 +64,6 @@
 				<li>Peers shall aggregate their routes to avoid routing table inflation.</li>
 			</ul>
 		</section>
-	</div>
-	<div class="group">
 		<section>
 			<h2>Acknowledgement</h2>
 
@@ -139,6 +121,7 @@
 			</ul>
 		</section>
 	</div>
+
 	<footer>
 		<p>Copyright &copy; {new Date().getFullYear()} Johan Karlsson</p>
 	</footer>
@@ -165,7 +148,6 @@
 		background-color: #262a2b;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 		padding: 0.25rem 1rem;
-		margin-top: 0.5rem;
 		border-radius: 0.25rem;
 	}
 
@@ -189,71 +171,15 @@
 		padding-top: auto;
 	}
 
-	/* Styling for links to external sites  */
-	.link-wrapper {
-		gap: 0.5rem;
-
-		padding: 0;
-		background-color: transparent;
-		box-shadow: none;
-	}
-
-	.link-wrapper {
+	.grid {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		list-style: none;
-		gap: 0.5rem;
-		padding: 0;
-	}
-
-	.link-wrapper a {
-		color: blanchedalmond;
-		background-color: #262a2b;
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-		border-radius: 0.25rem;
-		text-align: center;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		font-size: 1.25rem;
-		width: 100%;
-		padding: 0.75rem;
-	}
-
-	.link-wrapper a:hover {
-		background-color: #1d2021;
-		color: skyblue;
-	}
-
-	/* Styling for groups of 2 sections side by side */
-	.group {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-	}
-
-	.group > section {
-		width: calc(50% - 0.25rem);
-	}
-
-	/* Media queries */
-	@media (max-width: 1000px) {
-		.group > section {
-			width: 100%;
-		}
-
-		.group > section:last-child {
-			margin-top: 0;
-		}
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 0.5rem;
 	}
 
 	@media (max-width: 768px) {
-		.link-wrapper {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (max-width: 500px) {
-		.link-wrapper {
-			grid-template-columns: repeat(1, 1fr);
+		.grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
