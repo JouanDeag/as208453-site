@@ -135,7 +135,7 @@
 	}
 
 	h1 {
-		font-size: 2.25rem;
+		font-size: clamp(1.5rem, 5vw, 2.25rem);
 		margin: 0 0 1rem 0;
 	}
 
@@ -179,7 +179,7 @@
 
 	@media (max-width: 768px) {
 		.grid {
-			grid-template-columns: 1fr;
+			grid-template-columns: 100%;
 		}
 	}
 </style>
