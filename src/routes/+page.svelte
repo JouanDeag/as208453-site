@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
+	import type { PageData } from './$types';
+
 	import NavLinks from '../lib/components/NavLinks.svelte';
+
+	export let data: PageData;
 </script>
 
 <svelte:head>
@@ -11,7 +15,15 @@
 </svelte:head>
 
 <main>
-	<h1>AS208453 Peering policy</h1>
+	<header>
+		<h1>AS208453 Peering policy</h1>
+		<p>
+			Your IP: {data.ip}
+			{#if data.isOur}
+				- Powered by SweHosting
+			{/if}
+		</p>
+	</header>
 
 	<section>
 		<h2>General information</h2>
@@ -137,6 +149,12 @@
 	h1 {
 		font-size: clamp(1.5rem, 5vw, 2.25rem);
 		margin: 0 0 1rem 0;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	footer {
