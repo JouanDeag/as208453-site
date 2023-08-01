@@ -35,7 +35,7 @@ The site requires some configuration settings based on your specific environment
 
 ## Development Server
 
-To run the development server and view the Engine Analytica project locally, execute the following command:
+To run the development server and view the project locally, execute the following command:
 
 ```bash
 pnpm dev
@@ -61,7 +61,7 @@ To test the production build locally, you can use the following command:
 pnpm preview
 ```
 
-This will start a local server to preview the production build of Engine Analytica at [http://localhost:4173](http://localhost:4173/).
+This will start a local server to preview the production build at [http://localhost:4173](http://localhost:4173/).
 
 ## Extra stuff
 
