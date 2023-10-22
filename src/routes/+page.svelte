@@ -19,9 +19,6 @@
 		<h1>AS208453 Peering policy</h1>
 		<p>
 			Your IP: {data.ip}
-			{#if data.isOur}
-				- Powered by SweHosting
-			{/if}
 		</p>
 	</header>
 
