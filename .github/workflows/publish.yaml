@@ -5,7 +5,7 @@ on:
     branches: [ "master" ]
 
 env:
-  IMAGE_NAME: ${{ github.repository_owner }}/as208453-site
+  IMAGE_NAME: jouandeag/as208453-site
 
 jobs:
   build-and-push:
