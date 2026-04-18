@@ -1,0 +1,12 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Containerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    read_only: true
+    restart: unless-stopped
