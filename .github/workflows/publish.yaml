@@ -2,7 +2,7 @@ name: Build and Push to GHCR
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 env:
   IMAGE_NAME: ${{ github.repository_owner }}/as208453-site
